@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1230.0" style="-fx-background-color: #ebebeb;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurListePersonnel">
+   <children>
+      <VBox layoutX="8.0" layoutY="5.0" prefHeight="670.0" prefWidth="208.0" style="-fx-background-color: white;" styleClass="fond2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css">
+         <children>
+            <VBox fx:id="ligne" alignment="CENTER" prefHeight="102.0" prefWidth="208.0" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="211.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#switchToCreneau" prefHeight="75.0" prefWidth="75.0" style="-fx-background-radius: 15;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css">
+                                 <graphic>
+                                    <ImageView fitHeight="58.0" fitWidth="58.0" onDragDetected="#switchToCreneau" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/heart-pulse-solid.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="5.0" prefWidth="208.0" style="-fx-background-color: #ebebeb;" />
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="216.0">
+               <children>
+                  <Label text="Options" textFill="#6b6b6b">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="12.0" prefWidth="208.0" />
+            <VBox prefHeight="336.0" prefWidth="208.0">
+               <children>
+                  <HBox prefHeight="350.0" prefWidth="208.0">
+                     <children>
+                        <HBox prefHeight="336.0" prefWidth="57.0">
+                           <children>
+                              <VBox prefHeight="336.0" prefWidth="77.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="65.0">
+                                       <children>
+                                          <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/users-solid_2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="65.0">
+                                       <children>
+                                          <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/gears-solid_1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="65.0">
+                                       <children>
+                                          <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/user-doctor-solid.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="65.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/stethoscope-solid.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="40.0" prefWidth="65.0">
+                                       <children>
+                                          <ImageView fitHeight="37.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/triangle-exclamation-solid.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="336.0" prefWidth="143.0">
+                           <children>
+                              <VBox prefHeight="336.0" prefWidth="153.0">
+                                 <children>
+                                    <VBox prefHeight="40.0" prefWidth="143.0">
+                                       <children>
+                                          <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToPersonnel" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 25;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Personnel">
+                                             <font>
+                                                <Font name="Calibri Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="40.0" prefWidth="143.0">
+                                       <children>
+                                          <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToContrainte" prefHeight="40.0" prefWidth="124.0" style="-fx-background-radius: 25;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Contraintes">
+                                             <font>
+                                                <Font name="Calibri Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="40.0" prefWidth="143.0">
+                                       <children>
+                                          <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToFonction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-radius: 25;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Fonctions">
+                                             <font>
+                                                <Font name="Calibri Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="40.0" prefWidth="143.0">
+                                       <children>
+                                          <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToSpecialite" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 25;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Spécialités">
+                                             <font>
+                                                <Font name="Calibri Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="40.0" prefWidth="143.0">
+                                       <children>
+                                          <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToProbleme" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 25;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Problèmes">
+                                             <font>
+                                                <Font name="Calibri Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="208.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#switchToAddCreneau" prefHeight="18.0" prefWidth="154.0" style="-fx-background-radius: 10; -fx-background-color: #D1E0FF;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="+ créneau" textFill="#4783ff">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="49.0" prefWidth="208.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="18.0" prefWidth="154.0" style="-fx-background-radius: 10; -fx-background-color: #0072A3;" styleClass="btn3" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Imprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="216.0" prefHeight="680.0" prefWidth="1014.0">
+         <children>
+            <VBox prefHeight="702.0" prefWidth="1014.0" style="-fx-background-color: white;" styleClass="fond1" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css">
+               <children>
+                  <HBox prefHeight="140.0" prefWidth="1004.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="94.0" prefWidth="345.0" />
+                        <HBox prefHeight="94.0" prefWidth="306.0">
+                           <children>
+                              <VBox prefHeight="94.0" prefWidth="329.0">
+                                 <children>
+                                    <VBox prefHeight="53.0" prefWidth="306.0" style="-fx-background-color: white;" styleClass="pannel" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color red="0.8289473652839661" green="0.8289473652839661" blue="0.8289473652839661" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="150.0">
+                                                   <children>
+                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="148.0" style="-fx-background-radius: 25;" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="global">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="20.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="150.0">
+                                                   <children>
+                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="148.0" style="-fx-background-radius: 25;" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="personnel">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="20.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="94.0" prefWidth="347.0">
+                           <children>
+                              <VBox prefHeight="94.0" prefWidth="358.0">
+                                 <children>
+                                    <VBox prefHeight="47.0" prefWidth="347.0">
+                                       <children>
+                                          <HBox prefHeight="36.0" prefWidth="347.0">
+                                             <children>
+                                                <HBox prefHeight="36.0" prefWidth="213.0" />
+                                                <HBox prefHeight="36.0" prefWidth="128.0">
+                                                   <children>
+                                                      <HBox prefHeight="48.0" prefWidth="41.0">
+                                                         <children>
+                                                            <Button mnemonicParsing="false" onAction="#min" styleClass="btn">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="20.0" fitWidth="30.0" onDragDetected="#min" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@images/circle-minus-solid%20(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox prefHeight="48.0" prefWidth="41.0">
+                                                         <children>
+                                                            <Button mnemonicParsing="false" onAction="#max" styleClass="btn">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="20.0" fitWidth="30.0" onDragDetected="#max" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@images/up-right-and-down-left-from-center-solid%20(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </Button>
+                                                            <HBox prefHeight="29.0" prefWidth="44.0">
+                                                               <children>
+                                                                  <Button mnemonicParsing="false" onAction="#close" styleClass="btn">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="20.0" fitWidth="30.0" onDragDetected="#close" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@images/circle-xmark-solid%20(1).png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                  </Button>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="51.0" prefWidth="1004.0" style="-fx-background-color: #ebebeb;">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="603.0" prefWidth="1004.0">
+                     <children>
+                        <VBox prefHeight="558.0" prefWidth="1233.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="83.0" prefWidth="1004.0" styleClass="TraitsHD">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="660.0">
+                                             <children>
+                                                <Label text="Choisissez un Personnel">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="36.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="61.0" prefWidth="330.0">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="196.0">
+                                                   <children>
+                                                      <TextField fx:id="champRecherche" prefHeight="39.0" prefWidth="161.0" promptText="Recherche via id" style="-fx-border-radius: 25;">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="38.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#recherchePersonnelViaID">
+                                                         <graphic>
+                                                            <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@images/magnifying-glass-solid.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="485.0" prefWidth="1004.0">
+                                 <children>
+                                    <VBox prefHeight="375.0" prefWidth="1004.0">
+                                       <children>
+                                          <ListView fx:id="listePersonnels" prefHeight="454.0" prefWidth="640.0" style="-fx-background-colour: #C3C5C7; -fx-background-radius: 25;">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <effect>
+                                                <DropShadow>
+                                                   <color>
+                                                      <Color opacity="0.10000000149011612" />
+                                                   </color>
+                                                </DropShadow>
+                                             </effect>
+                                             <VBox.margin>
+                                                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                             </VBox.margin>
+                                          </ListView>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="64.0" prefWidth="1004.0">
+                                       <children>
+                                          <HBox prefHeight="68.0" prefWidth="1004.0">
+                                             <children>
+                                                <HBox prefHeight="87.0" prefWidth="796.0" />
+                                                <HBox alignment="CENTER" prefHeight="87.0" prefWidth="234.0">
+                                                   <children>
+                                                      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToAjoutPersonnel" prefHeight="46.0" prefWidth="146.0" style="-fx-background-radius: 25; -fx-background-color: #46A1E0;" styleClass="btn2" stylesheets="@../../../../../Downloads/fichier%20pour%20le%20projet/vues/application.css" text="Ajouter" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="22.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

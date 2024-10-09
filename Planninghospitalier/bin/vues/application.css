@@ -1,0 +1,158 @@
+	.button{
+		-fx-background-color: white;
+	}
+	.btn:hover{
+	    -fx-cursor:hand ;
+	    
+	}
+	/* styles.css */
+
+	.btn2:hover{
+		-fx-cursor:hand ;
+		-fx-background-color: rgb(128, 128, 128, 0.1);
+	}
+
+	.btn3:hover{
+		-fx-cursor:hand ;
+		-fx-background-color: #CCCCCC;
+	}
+
+
+	.table-row-cell:hover {
+	    -fx-background-color: #CCCCCC; /* Couleur grise au survol */
+	}
+	
+	/* Optionnel : ajustez les styles pour le texte à l'intérieur du créneau lorsqu'il est survolé */
+	.table-row-cell:hover .table-cell {
+	    -fx-text-fill: #000000; /* Couleur du texte au survol */
+	}
+	
+	.table-view-rounded {
+    	-fx-background-radius: 0 0 10 10; /* Vous pouvez ajuster la valeur pour obtenir le degré de courbure que vous souhaitez */
+	}
+	
+	.table-view-rounded .column-header-background {
+	    -fx-background-radius: 10 10 0 0;
+	}
+	
+	.table-view-rounded .table-cell {
+	    -fx-background-radius: 10;
+	}
+	
+    
+    .fond1{
+    	-fx-background-radius: 0.0 25.0 25.0 0.0;
+    }
+    .fond2{
+    	-fx-background-radius: 25.0 0.0 0.0 25.0;
+    }
+    .pannel{
+    	-fx-background-radius: 0.0 0.0 25.0 25.0;
+    }
+    
+    .TraitsHD {
+	    -fx-border-color: rgb(128, 128, 128, 0.1) ;
+	    -fx-border-width: 1 0 1 0; /* Ajustez l'épaisseur du trait selon vos besoins */
+	}
+    
+    #listePersonnels .list-cell {
+    	-fx-font-weight: bold;
+    	-fx-font-size:15px; 
+    }
+    
+    #listePersonnels .list-cell:hover {
+    	-fx-background-color : #6BA1E1;
+    }
+    
+    #listePersonnels .scroll-bar:vertical .thumb{
+    	-fx-background-color : #6BA1E1;
+    }
+    
+    #listePersonnels {
+    	-fx-border-color:transparent;
+    }
+    
+    .encadreOmbre {
+   		-fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0.0, 0.0);
+    }
+    
+    .encart {
+    	-fx-background-radius: 0 0 20 20;
+    	-fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0.0, 0.0);
+    }
+    
+    #boutonSuppSpe {
+    	-fx-background-color : #EB675E;
+   		-fx-padding: 10px;
+	    -fx-border-insets: 5px;
+	    -fx-background-insets: 5px;
+    	-fx-cursor: hand;
+    	-fx-font-weight:bold;
+    }
+    
+    #boutonModifSpe {
+    	-fx-background-color :  #6BA1E1;
+	    -fx-padding: 10px;
+	    -fx-border-insets: 5px ;
+	    -fx-background-insets: 5px ;
+	    -fx-cursor: hand;
+	    -fx-font-weight:bold;
+    }
+    
+    #rectangle {
+   		-fx-background-color : #D9D9D9;
+    }
+    
+    #listeSpe {
+  		-fx-background-color : #D9D9D9;
+    }
+    
+    .boutonPassage:hover {
+    	-fx-cursor:hand ;
+        -fx-background-color: rgb(128, 128, 128, 0.1);
+    }
+    
+    .boutonPassage2:hover {
+        -fx-background-color: #ABACAD;
+    }
+    
+    #paneViolations {
+    	-fx-background-radius:20;
+    	-fx-background-color:white;
+    	
+    }
+    
+    .scrollPaneViolations > .viewport {
+    	-fx-background-color:transparent;
+	}
+    
+    .bordureGauche {
+    	-fx-border-width: 0 0 0 3;
+    	-fx-border-color:#D9D9D9;
+    }
+    
+    .bordureHaute {
+    	-fx-border-width: 3 0 0 0;
+    	-fx-border-color:#D9D9D9;
+    }
+    
+    .anchorPaneViolations {
+    	-fx-padding: 10px;
+	    -fx-border-insets:5px;
+	    -fx-background-insets: 5px;
+    }
+    
+    #boutonGoToBesoin {
+    	-fx-background-color : #6BA1E1;
+    	-fx-background-radius:20;
+    }
+    
+    #rectangleViolation {
+   		-fx-background-color : white;
+   		-fx-background-radius:20;
+   		-fx-padding: 10px;
+	    -fx-border-insets: 5px;
+	    -fx-background-insets: 5px;
+    }
+    
+ 
