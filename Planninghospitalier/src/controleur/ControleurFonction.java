@@ -32,7 +32,6 @@ import metier.Fonction;
  * Cette classe est le contrôleur associé à la vue de gestion des fonctions.
  * Elle gère l'affichage, la suppression,
  * la modification et l'ajout de fonctions.
- * @author 22101222 - Code - java doc - checkstyle.
  */
 public class ControleurFonction implements Initializable {
     /**
