@@ -21,9 +21,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import metier.Personnel;
 
-/**
- * @author 22203517t - Jules Forest
- */
 public class ControleurListePersonnel
     implements Initializable {
 
