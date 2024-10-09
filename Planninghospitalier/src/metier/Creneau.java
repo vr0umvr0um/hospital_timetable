@@ -1,8 +1,3 @@
-/**
- * @author 22106979 - Documentation
- * @author Dylan Cailleau - Ecriture de la classe et documentation
- */
-
 package metier;
 
 import java.sql.Date;

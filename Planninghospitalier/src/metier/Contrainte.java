@@ -25,9 +25,6 @@ Méthodes:
     setTemporalite(String temporalite) : méthode permettant de définir
                                          la temporalité de la contrainte
 
- *
- * @author 22106979 - Documentation
- * @author 22106979 - Implémentation
  */
 
 package metier;

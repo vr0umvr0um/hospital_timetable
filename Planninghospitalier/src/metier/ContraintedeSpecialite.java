@@ -14,8 +14,6 @@
         setSpecialite() : définit la spécialité associée à la contrainte
         toString() : retourne une représentation textuelle de la contrainte
 
- *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package metier;

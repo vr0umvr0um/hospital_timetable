@@ -1,8 +1,3 @@
-/**
- * @author 22106979 Antivackis Vanessa - Documentation
- * @author 22208371 Cailleau Dylan - Ecriture de la classe et documentation
- */
-
 package dao;
 
 import java.sql.PreparedStatement;

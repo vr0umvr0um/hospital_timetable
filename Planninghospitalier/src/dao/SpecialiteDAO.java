@@ -1,8 +1,3 @@
-/**
- * @author 22106979 - Documentation
- * @author 22208030 - Implémentation
- * @author 22203517 Forest Jules - relecture et checkstyle
- */
 package dao;
 
 import java.math.BigInteger;

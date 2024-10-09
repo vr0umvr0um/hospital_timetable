@@ -1,9 +1,3 @@
-/**
- * @author 22106979 (ANTIVACKIS VANESSA) - Documentation
- * @author 2203517 (FOREST Jules) - écriture de la classe et documentation
- *
- */
-
 package metier;
 
 import java.util.ArrayList;

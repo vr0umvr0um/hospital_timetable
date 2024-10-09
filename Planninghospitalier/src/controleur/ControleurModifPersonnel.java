@@ -27,9 +27,6 @@ import metier.Fonction;
 import metier.Personnel;
 import metier.Specialite;
 
-/*
- * @author 22203517t - Jules Forest
- */
 public class ControleurModifPersonnel implements Initializable{
 
     /**

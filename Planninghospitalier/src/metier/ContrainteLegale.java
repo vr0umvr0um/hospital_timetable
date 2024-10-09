@@ -2,7 +2,6 @@
  * La classe ContrainteLegale est une classe dérivée de la classe Contrainte.
  * Elle contient des informations supplémentaires relatives aux contraintes légales.
  *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package metier;

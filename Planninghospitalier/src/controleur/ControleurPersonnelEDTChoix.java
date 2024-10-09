@@ -1,7 +1,3 @@
-/**
- * @author 22208371 Cailleau Dylan - Ecriture de la classe et documentation
- */
-
 package controleur;
 
 import java.io.IOException;

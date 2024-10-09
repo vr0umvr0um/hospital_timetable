@@ -8,7 +8,6 @@ import metier.Fonction;
 
 /**
  * Classe de test pour la classe Fonction.
- * @author 22101222 - code & documentation - checkstyle
  */
 public class TestFonction {
 /**

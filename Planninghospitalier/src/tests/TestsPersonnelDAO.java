@@ -9,7 +9,6 @@ import metier.Fonction;
 import metier.Personnel;
 
 /**
- * @author 22203517 - Forest Jules
  *
  * Classe de test de PersonnelDAO.
  * Toutes les méthodes ne sont pas testées, certaines sont trop

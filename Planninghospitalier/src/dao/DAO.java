@@ -1,7 +1,3 @@
-/**
- * @author 22106979 - Documentation & Implémentation
- */
-
 package dao;
 
 import java.sql.Connection;

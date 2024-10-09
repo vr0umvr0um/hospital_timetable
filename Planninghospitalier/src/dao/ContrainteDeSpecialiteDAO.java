@@ -1,8 +1,6 @@
 /**
  * La classe 'ContrainteDeSpecialiteDAO' fournit des méthodes pour gérer
  * les objets 'ContraintedeSpecialite' dans une base de données.
- *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package dao;

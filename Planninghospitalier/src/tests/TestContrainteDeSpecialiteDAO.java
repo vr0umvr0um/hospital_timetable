@@ -3,7 +3,6 @@
  * Elle contient quatre tests qui vérifient le bon fonctionnement
  * des méthodes de la classe ContraintedeSpecialiteDAO.
  *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package tests;

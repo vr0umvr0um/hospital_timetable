@@ -1,9 +1,3 @@
-/**
- * @author 22106979 - Documentation
- * @author 22101222 - code - documentation - checkstyle
- * @author 22203517t - relecture
- */
-
 package metier;
 
 /**

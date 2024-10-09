@@ -7,11 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import metier.Fonction;
-// test pour push
-/**
- * @author 22101222 - code & documentation & checkstyle
- * @author 22203517 Forest Jules - relecture et debug
- */
+
 public class FonctionDAO extends DAO<Fonction> {
     /**
      * ResultSet utilisé pour stocker les résultats des requétes SQL.

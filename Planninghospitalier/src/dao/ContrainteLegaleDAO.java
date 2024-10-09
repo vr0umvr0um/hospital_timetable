@@ -2,7 +2,6 @@
  * La classe 'ContrainteLegaleDAO' fournit des méthodes pour gérer
  * les objets 'ContrainteLegale' dans une base de données.
  *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package dao;

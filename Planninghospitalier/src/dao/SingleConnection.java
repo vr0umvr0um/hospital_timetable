@@ -1,7 +1,5 @@
 /**
  * Cette classe fournit une connexion unique à la base de données.
- *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package dao;

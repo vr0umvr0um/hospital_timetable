@@ -1,8 +1,3 @@
-/**
- * @author 22106979 - Documentation
- * @author 22206008 - Meriem bennama - code
- */
-
 package metier;
 
 import java.io.Serializable;

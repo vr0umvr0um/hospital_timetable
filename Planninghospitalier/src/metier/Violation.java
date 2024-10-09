@@ -1,8 +1,3 @@
-/**
- * @author 22106979 - Documentation
- * @author 22208030 - Implémentation
- */
-
 package metier;
 
 /**

@@ -1,7 +1,3 @@
-/**
- * @author 22106979 - Documentation
- */
-
 package tests;
 
 import metier.Personnel;

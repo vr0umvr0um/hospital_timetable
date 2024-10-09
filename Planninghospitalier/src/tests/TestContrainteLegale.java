@@ -3,7 +3,6 @@
  * Elle contient deux tests qui vérifient le bon fonctionnement
  * des méthodes de la classe ContrainteLegale.
  *
- * @author 22106979 - Documentation & Implémentation
  */
 
 package tests;
