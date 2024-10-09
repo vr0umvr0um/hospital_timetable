@@ -22,10 +22,7 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import metier.BesoinEnPersonnel;
-/**
- * @author Meriem Bennama : code - doc
- * @author 22101222 Mohamed Arwa - un peu de doc & checkstyle
- */
+
 public class ControleurBesoinsCreneau implements Initializable {
     /**
      * ListView affichant les besoins en personnel.
