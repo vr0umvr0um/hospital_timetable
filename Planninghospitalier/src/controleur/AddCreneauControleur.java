@@ -1,7 +1,3 @@
-/**
- * @author 22208371
- */
-
 package controleur;
 
 import java.net.URL;
