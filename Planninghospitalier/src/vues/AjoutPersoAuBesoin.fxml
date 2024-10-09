@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="219.0" prefWidth="320.0" style="-fx-background-color: #f3f3f3;" stylesheets="@AjoutBesoin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurAjoutPeroAuBesoin">
+   <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="86.0" spacing="10">
+       <VBox spacing="5" />
+   </VBox>
+    <HBox alignment="CENTER" layoutX="98.0" layoutY="162.0" spacing="10">
+        <Button onAction="#close" style="-fx-background-color: transparent;" styleClass="form-button" text="Annuler" textFill="RED" />
+        <Button onAction="#ajouterPerso" style="-fx-background-color: transparent;" styleClass="form-button" text="Affecter" textFill="#2583f6" />
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+    </HBox>
+   <HBox alignment="CENTER" layoutX="76.0" prefHeight="35.0" prefWidth="168.0">
+      <children>
+         <HBox prefHeight="87.0" prefWidth="378.0">
+            <children>
+               <VBox prefHeight="94.0" prefWidth="329.0">
+                  <children>
+                     <VBox prefHeight="53.0" prefWidth="306.0" style="-fx-background-color: white;" styleClass="pannel" stylesheets="@application.css">
+                        <effect>
+                           <DropShadow>
+                              <color>
+                                 <Color red="0.8289473652839661" green="0.8289473652839661" blue="0.8289473652839661" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                        <children>
+                           <HBox alignment="CENTER" prefHeight="117.0" prefWidth="242.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Affectation ">
+                                    <font>
+                                       <Font name="System Bold" size="13.0" />
+                                    </font>
+                                 </Text>
+                              </children>
+                           </HBox>
+                        </children>
+                     </VBox>
+                  </children>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </VBox>
+            </children>
+         </HBox>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <padding>
+         <Insets top="-6.0" />
+      </padding>
+   </HBox>
+     <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="94.0">
+         <Label prefHeight="17.0" prefWidth="75.0" styleClass="form-label" text="Personnel*">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+         <ComboBox fx:id="comboPersonnel" minWidth="184.0" prefHeight="25.0" prefWidth="184.0" promptText="-Choisissez une option-" styleClass="form-combo-box">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+     </HBox>
+
+</AnchorPane>

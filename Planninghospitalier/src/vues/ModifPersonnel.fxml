@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurModifPersonnel">
+   <children>
+      <VBox alignment="CENTER" prefHeight="520.0" prefWidth="640.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <HBox alignment="BASELINE_RIGHT" prefHeight="92.0" prefWidth="640.0">
+               <children>
+                  <HBox prefHeight="92.0" prefWidth="201.0" />
+                  <HBox alignment="CENTER" prefHeight="92.0" prefWidth="253.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="78.0" prefWidth="266.0">
+                           <children>
+                              <Label alignment="CENTER" ellipsisString="10" prefHeight="61.0" prefWidth="244.0" style="-fx-background-color: white;" styleClass="encart" stylesheets="@application.css" text="Personnel">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="92.0" prefWidth="187.0">
+                     <children>
+                        <HBox prefHeight="36.0" prefWidth="347.0">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="213.0" />
+                              <HBox prefHeight="36.0" prefWidth="128.0">
+                                 <children>
+                                    <HBox prefHeight="29.0" prefWidth="44.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#close" style="-fx-background-color: white;">
+                                             <graphic>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0" onDragDetected="#close" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@images/circle-xmark-solid%20(1).png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="416.0" prefWidth="640.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 30;" styleClass="encadreOmbre" stylesheets="@application.css">
+               <children>
+                  <HBox prefHeight="96.0" prefWidth="600.0">
+                     <children>
+                        <HBox prefHeight="67.0" prefWidth="164.0" />
+                        <VBox prefHeight="59.0" prefWidth="285.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="59.0" prefWidth="299.0" text="Modifier le personnel">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="59.0" prefWidth="135.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="282.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="268.0" prefWidth="310.0">
+                           <children>
+                              <VBox prefHeight="141.0" prefWidth="300.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="300.0" text="Nom du personnel *">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="champNom" promptText="Nom du personnel" style="-fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="82.0" prefWidth="304.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="300.0" text="Date de naissance *">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="champDateNaissance" promptText="Date de naissance" style="-fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </DatePicker>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="139.0" prefWidth="300.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="300.0" text="Fonction *">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="champFonction" prefHeight="39.0" prefWidth="328.0" promptText="Choisir une fonction" style="-fx-background-color: white; -fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="268.0" prefWidth="310.0">
+                           <children>
+                              <VBox prefHeight="141.0" prefWidth="300.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="300.0" text="Prénom du personnel *">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="champPrenom" promptText="Prenom du personnel" style="-fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="82.0" prefWidth="301.0">
+                                 <children>
+                                    <Label prefHeight="42.0" prefWidth="300.0" text="Temps de travail mensuel *">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="champTTM" promptText="Temps de travail mensuel" style="-fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="139.0" prefWidth="300.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="109.0">
+                                       <children>
+                                          <Label prefHeight="39.0" prefWidth="161.0" text="Spécialités">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#ajouterSpe" style="-fx-background-color: transparent;">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <graphic>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <image>
+                                                      <Image url="@images/plus-solid-_1_.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#enleverSpe" style="-fx-background-color: transparent;">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <graphic>
+                                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <image>
+                                                      <Image url="@images/circle-minus-solid%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <ComboBox fx:id="champSpecialite" prefHeight="39.0" prefWidth="424.0" promptText="Spécialités du personnel" style="-fx-background-color: white; -fx-background-radius: 10;">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="91.0" prefWidth="600.0">
+                     <children>
+                        <HBox prefHeight="67.0" prefWidth="319.0" />
+                        <Button mnemonicParsing="false" onAction="#modifPersonnel" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #D9D9D9;" text="Modifier" textFill="#6ba1e1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#close" style="-fx-background-color: #D9D9D9;" text="Annuler" textFill="#e21e1e">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
