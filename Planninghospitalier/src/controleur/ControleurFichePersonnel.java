@@ -25,9 +25,6 @@ import javafx.stage.Window;
 import metier.Personnel;
 import metier.Specialite;
 
-/**
- * @author 22203517t - Jules Forest
- */
 public class ControleurFichePersonnel
     implements Initializable {
 
