@@ -41,6 +41,17 @@ I've coded and documented all of those files along with their FXML files and the
 12.  Go to "package dao" -> "singleConnection.java" -> Change the arguments to connect to the database in method "getInstance()".
 
 ## SCREENSHOTS
+### HOMEPAGE
+![image](https://github.com/user-attachments/assets/577625d6-3d5c-419e-917f-1db5ff17523f)
+### ADDING A TIMESLOT
+![image](https://github.com/user-attachments/assets/2c85c4bd-3749-4658-bb96-32ba783bf1ec)
+### PERSONNEL INTERFACE
+#### VIEW
+![image](https://github.com/user-attachments/assets/33bfe8f9-1ec1-4569-a360-5f8e3207c5ee)
+#### ADD
+![image](https://github.com/user-attachments/assets/8fda69f2-23d6-484d-b25b-8a068409d843)
+#### INFORMARIONS ON PERSONNEL
+![image](https://github.com/user-attachments/assets/3f2fae64-0352-4ad6-94ca-a64fe32335f7)
 
 ## CREDITS
 My group project mates and the many explanatory tutorial videos on javaFX.
