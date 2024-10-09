@@ -6,7 +6,18 @@ It's a hospital timetable application that lets you add/modify/delete/consult st
 
 ## SET-UP GUIDE
 1. Download [JavaFX SDK](https://gluonhq.com/products/javafx/) depending on your operating system.
-2. Download projects and open it with an IDE
+2. Download projects and open it with an IDE through import.
+3. Go to Windows -> Preferences -> Libraries -> User Library -> Create a new folder -> Add external jars -> Click on your extracted javaFX directory -> lib -> Select all files -> Add   -> Apply and close.
+4. Download eclipse extension called "e(fx)clipse".
+5. On your left panel, open "lib" directory -> Show in system explorer -> Select "controlfx", "fontawesomefx", "mysql-connector" and "jfoenix" -> Add them to your project folder.
+6. Click on your project -> Build path -> Configure build path -> Module path -> Add Libraries -> User library and add the created library of step 3.
+7.  Click on "Module path" -> Add Library -> Add "JavaFX SDK".
+8.  Click on "Module path" -> Add External Jars -> Add "controlfx", "fontawesomefx", "mysql-connector" and "jfoenix".
+9.  On run configuration -> Arguments -> Add "--module-path(absolute link of the projects) --add-modules javafx.controls,javafx.graphics,javafx.fxml".
+10.  Start MySQL servers.
+11.  Using phpMyAdmin, create a new databal named "planninghospitalier" and import the file "planninghospitalier.sql".
+12.  Go to "package dao" -> "singleConnection.java" -> Change the arguments to connect to the database in method "getInstance()".
+
 ## SCREENSHOTS
 
 ## CREDITS
