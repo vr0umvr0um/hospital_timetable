@@ -31,9 +31,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import metier.Specialite;
 
-/**
- * @author 22203517t - Jules Forest
- */
 public class ControleurListeSpe implements Initializable{
 
     // attributs nécessaires au fonctionnement du controleur pour switcher de pages.
