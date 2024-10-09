@@ -1,5 +1,5 @@
 /**
- * @author 22208371 Cailleau Dylan - Ecriture de la classe et documentation
+ * @author 22208371
  */
 
 package controleur;
