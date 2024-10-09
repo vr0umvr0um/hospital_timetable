@@ -21,3 +21,4 @@ It's a hospital timetable application that lets you add/modify/delete/consult st
 ## SCREENSHOTS
 
 ## CREDITS
+My group project mates and the many explanatory tutorial videos on javaFX.
