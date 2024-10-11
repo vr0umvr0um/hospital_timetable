@@ -24,7 +24,7 @@ Here is a list of all the files I have coded and what I've done besides coding:
 -  Javadoc,
 -  MCD diagram.
 
-I've coded and documented all of those files along with their FXML files and their corresponding "Controleur..." files. It took approximately 100h for all those files.
+I've coded and documented all of those files along with their FXML files and their corresponding "Controleur..." files. It took approximately 130h for all those files.
 
 ## SET-UP GUIDE
 1. Download [JavaFX SDK](https://gluonhq.com/products/javafx/) depending on your operating system.
@@ -71,3 +71,4 @@ I've coded and documented all of those files along with their FXML files and the
 
 ## CREDITS
 My group project mates and the many explanatory tutorial videos on javaFX.
+Gluon for JavaFX SDK and Scene builder
